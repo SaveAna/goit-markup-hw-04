@@ -52,6 +52,11 @@ html {
   color: var(--accent-color);
 }
 
+.icon:hover,
+.icon:focus {
+  fill: var(--accent-color);
+}
+
 .header .link:hover:not(.logo),
 .header .link:focus:not(.logo),
 .footer .link:hover:not(.logo),
@@ -134,6 +139,11 @@ img {
   color: var(--basic-text-color);
   padding-top: 32px;
   padding-bottom: 32px;
+}
+
+.mail-icon {
+  fill: currentColor;
+  margin-right: 10px;
 }
 
 /* ----------------------------- */
