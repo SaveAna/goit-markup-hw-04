@@ -131,7 +131,7 @@ img {
 }
 
 .header .contact {
-  display: inline-block;
+  display: flex;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -139,11 +139,13 @@ img {
   color: var(--basic-text-color);
   padding-top: 32px;
   padding-bottom: 32px;
+  align-items: center;
+  gap: 10px;
 }
 
-.mail-icon {
+.mail-icon,
+.tel-icon {
   fill: currentColor;
-  margin-right: 10px;
 }
 
 /* ----------------------------- */
