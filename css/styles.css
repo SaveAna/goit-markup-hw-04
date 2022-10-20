@@ -174,6 +174,7 @@ img {
 .hero {
   text-align: center;
   color: var(--primary-white-color);
+
   padding-top: 200px;
   padding-bottom: 200px;
 }
@@ -218,7 +219,7 @@ img {
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(to right, var(--overlay-color), var(--overlay-color)),
-    url(../images/bg-img.jpg);
+    url('../images/bg-img.jpg');
   background-color: var(--hero-bg-color);
   background-size: cover;
   background-repeat: no-repeat;
@@ -232,6 +233,7 @@ img {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-top: 30px;
 }
 
 .feature-description {
@@ -240,6 +242,38 @@ img {
   letter-spacing: 0.03em;
   color: var(--basic-text-color);
 }
+
+.thumb {
+  background-color: var(--light-bg-color);
+  border-radius: 4px;
+}
+
+.feature-icon {
+  display: block;
+  min-height: 120px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* .features-group .item::before {
+  display: block;
+  content: '';
+  height: 120px;
+
+  
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--light-bg-color);
+  border-radius: 4px;
+}
+
+.icon-antenna::before {
+  width: 70px;
+  height: 70px;
+  background-image: url(../images/icons.svg#antenna);
+  background-color: var(--light-bg-color);
+} */
 
 /* ---------------------------- */
 
