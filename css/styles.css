@@ -5,8 +5,10 @@
   --primary-white-color: #ffffff;
   --primary-black-color: #212121;
   --footer-contacts-color: #ffffff99;
+  --overlay-color: #2f303a66;
   --dark-bg-color: #2f303a;
   --light-bg-color: #f5f4fa;
+  --hero-bg-color: #c4c4c4;
   --header-border-color: #ececec;
   --project-border-color: #eeeeee;
   --card-gap: 30px;
@@ -172,8 +174,6 @@ img {
 .hero {
   text-align: center;
   color: var(--primary-white-color);
-  background-color: var(--dark-bg-color);
-
   padding-top: 200px;
   padding-bottom: 200px;
 }
@@ -210,6 +210,19 @@ img {
 .main-btn:focus,
 .main-btn:hover {
   background-color: var(--active-btn-color);
+}
+
+.overlay {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(to right, var(--overlay-color), var(--overlay-color)),
+    url(../images/bg-img.jpg);
+  background-color: var(--hero-bg-color);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 /* features-section */
