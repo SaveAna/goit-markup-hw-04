@@ -134,7 +134,7 @@ img {
 }
 
 .header .contact {
-  display: flex;
+  display: inline-flex;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -327,11 +327,8 @@ img {
   gap: 10px;
 }
 
-.social-links .item {
-  display: flex;
-}
-
 .social-links .link {
+  display: block;
   border-radius: 50%;
   color: var(--icon-color);
 }
@@ -362,6 +359,56 @@ img {
 .teammate-card .content {
   padding-top: var(--card-gap);
   padding-bottom: var(--card-gap);
+}
+
+/* customers-section */
+
+.customers {
+  background-color: var(--primary-white-color);
+}
+
+/* ----------geometry--------------------- */
+
+.clients {
+  display: flex;
+  justify-content: center;
+  gap: var(--card-gap);
+  margin-top: 50px;
+
+  /* flex-basis: calc(100% / 6 - var(--card-gap)); */
+  max-width: 1170px;
+  /* flex-basis: calc((100%-5 * var(--card-gap)) / 6); */
+}
+
+.stop {
+  max-width: 100%;
+  min-width: 100%;
+}
+.customer-icon {
+  /* display: flex; */
+  width: 106px;
+  height: 60px;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  fill: var(--icon-color);
+  /* padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 32px;
+  padding-right: 32px; */
+}
+
+.client-card {
+  display: block;
+  /* display: inline-block; */
+  /* text-align: center; */
+  /* outline: 1px dashed red; */
+  /* outline: 1px solid var(--icon-color); */
+  border: 1px solid var(--icon-color);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 31px;
+  padding-right: 31px;
 }
 
 /* footer-section */
