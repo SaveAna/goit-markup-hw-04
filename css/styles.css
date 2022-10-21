@@ -6,6 +6,7 @@
   --primary-black-color: #212121;
   --footer-contacts-color: #ffffff99;
   --overlay-color: #2f303a66;
+  --icon-color: #afb1b8;
   --dark-bg-color: #2f303a;
   --light-bg-color: #f5f4fa;
   --hero-bg-color: #c4c4c4;
@@ -145,12 +146,14 @@ img {
   gap: 10px;
 }
 
+/* ---------icons-------------------- */
+
 .mail-icon,
 .tel-icon {
   fill: currentColor;
 }
 
-/* ----------------------------- */
+/* ----------geometry------------------- */
 
 .head-content {
   display: flex;
@@ -213,6 +216,8 @@ img {
   background-color: var(--active-btn-color);
 }
 
+/* -----------background------------------ */
+
 .overlay {
   max-width: 1600px;
   height: 600px;
@@ -243,6 +248,8 @@ img {
   color: var(--basic-text-color);
 }
 
+/* --------------icons------------------ */
+
 .thumb {
   background-color: var(--light-bg-color);
   border-radius: 4px;
@@ -255,27 +262,7 @@ img {
   margin-right: auto;
 }
 
-/* .features-group .item::before {
-  display: block;
-  content: '';
-  height: 120px;
-
-  
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: var(--light-bg-color);
-  border-radius: 4px;
-}
-
-.icon-antenna::before {
-  width: 70px;
-  height: 70px;
-  background-image: url(../images/icons.svg#antenna);
-  background-color: var(--light-bg-color);
-} */
-
-/* ---------------------------- */
+/* -----------geometry----------------- */
 
 .features-group {
   display: flex;
@@ -331,9 +318,41 @@ img {
   margin-top: 10px;
 }
 
-/* ------------------------------- */
+/* ---------icons-------------------- */
 
-.teammates .list {
+.social-links {
+  display: flex;
+  margin-top: 16px;
+  justify-content: center;
+  gap: 10px;
+}
+
+.social-links .item {
+  display: flex;
+}
+
+.social-links .link {
+  border-radius: 50%;
+  color: var(--icon-color);
+}
+
+.social-icon {
+  display: block;
+  width: 44px;
+  height: 44px;
+  fill: currentColor;
+  padding: 12px;
+}
+
+.social-links .link:hover,
+.social-links .link:focus {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+
+/* ----------geometry--------------------- */
+
+.teammates .card {
   display: flex;
   gap: var(--card-gap);
   flex-basis: calc((100%-3 * var(--card-gap)) / 4);
