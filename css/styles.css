@@ -104,7 +104,8 @@ p {
   padding-bottom: 94px;
 }
 
-img {
+img,
+svg {
   display: block;
   max-width: 100%;
 }
@@ -134,7 +135,7 @@ img {
 }
 
 .header .contact {
-  display: inline-flex;
+  display: flex;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -251,13 +252,13 @@ img {
 /* --------------icons------------------ */
 
 .thumb {
+  padding-top: 25px;
+  padding-bottom: 25px;
   background-color: var(--light-bg-color);
   border-radius: 4px;
 }
 
 .feature-icon {
-  display: block;
-  min-height: 120px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -325,6 +326,8 @@ img {
   margin-top: 16px;
   justify-content: center;
   gap: 10px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .social-links .link {
@@ -334,7 +337,6 @@ img {
 }
 
 .social-icon {
-  display: block;
   width: 44px;
   height: 44px;
   fill: currentColor;
@@ -367,48 +369,44 @@ img {
   background-color: var(--primary-white-color);
 }
 
-/* ----------geometry--------------------- */
+/* ----------geometry & icons--------------------- */
 
+/* list */
 .clients {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: var(--card-gap);
   margin-top: 50px;
-
-  /* flex-basis: calc(100% / 6 - var(--card-gap)); */
-  max-width: 1170px;
-  /* flex-basis: calc((100%-5 * var(--card-gap)) / 6); */
 }
 
-.stop {
-  max-width: 100%;
-  min-width: 100%;
-}
-.customer-icon {
-  /* display: flex; */
-  width: 106px;
-  height: 60px;
-  display: block;
-  align-items: center;
-  justify-content: center;
-  fill: var(--icon-color);
-  /* padding-top: 16px;
-  padding-bottom: 16px;
-  padding-left: 32px;
-  padding-right: 32px; */
-}
-
+/* list-item */
 .client-card {
+  flex-basis: (100% - 5 * var(--card-gap) / 6);
+}
+
+/* item-link */
+.card-link {
   display: block;
-  /* display: inline-block; */
-  /* text-align: center; */
-  /* outline: 1px dashed red; */
-  /* outline: 1px solid var(--icon-color); */
+  color: var(--icon-color);
   border: 1px solid var(--icon-color);
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-left: 31px;
-  padding-right: 31px;
+  border-radius: 4px;
+  padding: 16px 32px;
+}
+
+/* svg-in-link */
+.customer-icon {
+  height: 60px;
+  width: 106px;
+  fill: currentColor;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.card-link:hover,
+.card-link:focus {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
 }
 
 /* footer-section */
@@ -507,7 +505,7 @@ portfolio filter-buttons */
 }
 
 .project-card {
-  flex-basis: calc(100% / 3 - var(--card-gap));
+  flex-basis: ((100% - 2 * var(--card-gap)) / 3);
   background-color: var(--primary-white-color);
 }
 
