@@ -7,6 +7,7 @@
   --footer-contacts-color: #ffffff99;
   --overlay-color: #2f303a66;
   --icon-color: #afb1b8;
+  --footer-icon-color: #ffffff1a;
   --dark-bg-color: #2f303a;
   --light-bg-color: #f5f4fa;
   --hero-bg-color: #c4c4c4;
@@ -330,13 +331,13 @@ svg {
   margin-right: auto;
 }
 
-.social-links .link {
+.team-social-link {
   display: block;
   border-radius: 50%;
   color: var(--icon-color);
 }
 
-.social-icon {
+.teammates .social-icon {
   width: 44px;
   height: 44px;
   fill: currentColor;
@@ -435,14 +436,56 @@ svg {
   color: var(--footer-contacts-color);
 }
 
-/* ------------------------- */
+.social-title {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+  margin-top: 15px;
+}
+
+/* ----------geometry--------------- */
 
 .footer .address-list {
   margin-top: 20px;
+  width: 231px;
 }
 
 .footer .list .item:not(:first-child) {
   margin-top: 9px;
+}
+
+/* -------------social-links------------------ */
+
+.footer .container {
+  display: flex;
+  gap: 70px;
+}
+
+.footer-social-links {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.footer-social-link {
+  display: block;
+  border-radius: 50%;
+  color: var(--primary-white-color);
+  background-color: var(--footer-icon-color);
+}
+
+.footer .social-icon {
+  width: 44px;
+  height: 44px;
+  fill: var(--primary-white-color);
+  padding: 12px;
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background-color: var(--accent-color);
 }
 
 /* portfolio-section 
@@ -513,4 +556,10 @@ portfolio filter-buttons */
   padding: 20px 24px;
   border: 1px solid var(--project-border-color);
   border-top: transparent;
+}
+
+.project-card:hover,
+.project-card:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
