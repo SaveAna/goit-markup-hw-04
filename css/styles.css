@@ -105,8 +105,7 @@ p {
   padding-bottom: 94px;
 }
 
-img,
-svg {
+img {
   display: block;
   max-width: 100%;
 }
@@ -162,9 +161,12 @@ svg {
   align-items: center;
 }
 
+.navigation {
+  margin-left: 93px;
+}
+
 .menu-nav {
   display: flex;
-  margin-left: 93px;
   gap: 50px;
 }
 
@@ -179,9 +181,17 @@ svg {
 .hero {
   text-align: center;
   color: var(--primary-white-color);
-
+  max-width: 1600px;
   padding-top: 200px;
   padding-bottom: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(to right, var(--overlay-color), var(--overlay-color)),
+    url('../images/bg-img.jpg');
+  background-color: var(--hero-bg-color);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .hero-title {
@@ -218,21 +228,6 @@ svg {
   background-color: var(--active-btn-color);
 }
 
-/* -----------background------------------ */
-
-.overlay {
-  max-width: 1600px;
-  height: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  background-image: linear-gradient(to right, var(--overlay-color), var(--overlay-color)),
-    url('../images/bg-img.jpg');
-  background-color: var(--hero-bg-color);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
 /* features-section */
 
 .feature-title {
@@ -253,15 +248,12 @@ svg {
 /* --------------icons------------------ */
 
 .thumb {
-  padding-top: 25px;
-  padding-bottom: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
   background-color: var(--light-bg-color);
   border-radius: 4px;
-}
-
-.feature-icon {
-  margin-left: auto;
-  margin-right: auto;
 }
 
 /* -----------geometry----------------- */
@@ -332,16 +324,19 @@ svg {
 }
 
 .team-social-link {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
   color: var(--icon-color);
 }
 
 .teammates .social-icon {
-  width: 44px;
-  height: 44px;
+  width: 20px;
+  height: 20px;
   fill: currentColor;
-  padding: 12px;
 }
 
 .social-links .link:hover,
@@ -383,25 +378,23 @@ svg {
 
 /* list-item */
 .client-card {
-  flex-basis: (100% - 5 * var(--card-gap) / 6);
+  flex-basis: calc(100% - 5 * var(--card-gap) / 6);
 }
 
 /* item-link */
 .card-link {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 92px;
   color: var(--icon-color);
   border: 1px solid var(--icon-color);
   border-radius: 4px;
-  padding: 16px 32px;
 }
 
 /* svg-in-link */
 .customer-icon {
-  height: 60px;
-  width: 106px;
   fill: currentColor;
-  padding-top: 8px;
-  padding-bottom: 8px;
 }
 
 .card-link:hover,
@@ -442,7 +435,6 @@ svg {
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--primary-white-color);
-  margin-top: 15px;
 }
 
 /* ----------geometry--------------- */
@@ -460,6 +452,7 @@ svg {
 
 .footer .container {
   display: flex;
+  align-items: baseline;
   gap: 70px;
 }
 
@@ -470,17 +463,20 @@ svg {
 }
 
 .footer-social-link {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
   color: var(--primary-white-color);
   background-color: var(--footer-icon-color);
 }
 
 .footer .social-icon {
-  width: 44px;
-  height: 44px;
+  width: 20px;
+  height: 20px;
   fill: var(--primary-white-color);
-  padding: 12px;
 }
 
 .footer-social-link:hover,
@@ -548,8 +544,12 @@ portfolio filter-buttons */
 }
 
 .project-card {
-  flex-basis: ((100% - 2 * var(--card-gap)) / 3);
+  flex-basis: calc((100% - 2 * var(--card-gap)) / 3);
   background-color: var(--primary-white-color);
+}
+
+.project-link {
+  display: block;
 }
 
 .text-content {
@@ -559,7 +559,9 @@ portfolio filter-buttons */
 }
 
 .project-card:hover,
-.project-card:focus {
+.project-card:focus,
+.project-link:hover,
+.project-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
